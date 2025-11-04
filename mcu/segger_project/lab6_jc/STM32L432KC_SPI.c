@@ -23,6 +23,9 @@ void initSPI(int br, int cpol, int cpha) {
     pinMode(SPI1_MOSI, GPIO_ALT); // SPI1_MOSI
     pinMode(SPI1_CE, GPIO_OUTPUT); //  Manual CE/NSS
 
+    // Set output speed type to high for SCK
+    GPIOB->OSPEEDR |= (GPIO_OSPEEDR_OSPEED3);
+
     //Setting to AF05
     GPIOB->AFR[0] |= _VAL2FLD(GPIO_AFRL_AFSEL3, 5);
     GPIOB->AFR[0] |= _VAL2FLD(GPIO_AFRL_AFSEL4, 5);

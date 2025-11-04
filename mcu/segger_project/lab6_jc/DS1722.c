@@ -56,9 +56,6 @@ void setResolution(int res){
     case 12:
       config = 0b11101110;
       break;
-
-    default: 
-      config = 0b11100000;
   }
 
   digitalWrite(SPI1_CE, 1);
@@ -68,7 +65,7 @@ void setResolution(int res){
 }
 
 
-int readTemp(void) {
+float readTemp(void) {
   uint8_t tempLSB = 0;
   uint8_t tempMSB = 0;
 
@@ -82,7 +79,7 @@ int readTemp(void) {
   tempLSB = spiSendReceive(0x00); // dummy bytes to grab data from MISO line
   digitalWrite(SPI1_CE, 0);
 
-  uint16_t temperature = (tempMSB << 8) | tempLSB; // concatenate MSB and LSB bytes
-
+  float temperature = (tempMSB << 8) | tempLSB; // concatenate MSB and LSB bytes
+  temperature = (float)temperature/(float)256;
   return temperature;
 }

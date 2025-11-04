@@ -16,10 +16,10 @@
 // Set decode mode to SPI, set correct SCLK, MOSI, MISO, set correct CE/CS
 // Ensure polarity is 1
 
-#define SPI1_MISO PB4 // D2
-#define SPI1_MOSI PB5 // D3
+#define SPI1_MISO PB4 // D1
+#define SPI1_MOSI PB5 // D2
 #define SPI1_SCK PB3 // D0
-#define SPI1_CE PB1 // D6
+#define SPI1_CE PB1 // D3
 
 ///////////////////////////////////////////////////////////////////////////////
 // Function prototypes

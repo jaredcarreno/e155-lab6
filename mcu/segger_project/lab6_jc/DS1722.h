@@ -25,6 +25,6 @@
 // pull CE low, SPI send receive function, pull CE HIGH
 void configureDS1722(void);
 void setResolution(int res);
-int readTemp(void);
+float readTemp(void);
 
 #endif
