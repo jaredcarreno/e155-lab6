@@ -2,7 +2,7 @@
 // Jared Carreno
 // jcarreno@hmc.edu
 // 10-19-2025
-// TODO: <SHORT DESCRIPTION OF WHAT THIS FILE DOES>
+// Header file containing general defines for DS1722 addresses and configuration.
 
 #ifndef DS1722_H
 #define DS1722_H

@@ -2,8 +2,7 @@
 // Jared Carreno
 // jcarreno@hmc.edu
 // 10/20/2025
-// TODO: <SHORT DESCRIPTION OF WHAT THIS FILE DOES>
-
+// This file contains code for reading temperature and setting temperature resolution from/to the DS1722 temperature sensor
 
 #include <string.h>
 #include <stdlib.h>

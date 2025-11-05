@@ -1,8 +1,8 @@
 /*
-File: Lab_6_JHB.c
-Author: Josh Brake
-Email: jbrake@hmc.edu
-Date: 9/14/19
+File: main.c
+Author: Jared Carreno
+Email: jcarreno@hmc.edu
+Date: 11/4/2025
 */
 
 #include <string.h>

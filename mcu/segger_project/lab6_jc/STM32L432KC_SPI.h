@@ -2,7 +2,7 @@
 // Jared Carreno
 // jcarreno@hmc.edu
 // 10/16/2025
-// Enables SPI (setting clock speed, polarity, phase) and tests it by sending a character.
+// This header file contains general defines used in SPI communication.
 
 #ifndef STM32L4_SPI_H
 #define STM32L4_SPI_H

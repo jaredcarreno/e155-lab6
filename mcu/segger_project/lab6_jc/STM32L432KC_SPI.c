@@ -2,7 +2,8 @@
 // Jared Carreno
 // jcarreno@hmc.edu
 // 10/16/2025
-// TODO: <SHORT DESCRIPTION OF WHAT THIS FILE DOES>
+// This file contains code that is utilized to initialize and complete SPI communication between the controller (STM32) and peripherals
+// using PB1, PB3, PB4, PB5 alternate functions. 
 
 #include "STM32L432KC.h"
 #include <stm32l432xx.h>
